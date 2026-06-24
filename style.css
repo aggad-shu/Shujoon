@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'CustomGaramond';
+  src: url('fonts/EBGaramond-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'CustomGaramond', serif;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+p {
+  text-align: justify;
+  text-indent: 30px; /* adjust pixels as needed */
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 30px;
+  text-align: center; /* Center only this heading */
+}
+
+.post-content {
+  max-width: 700px;   /* Adjust to taste */
+  margin: 0 auto;      /* Centers it horizontally */
+  padding: 0 20px;     /* Optional padding inside */
+}
+
+
+.right-image {
+  float: right;
+  width: 500px;      /* adjust as desired */
+  height: auto;
+  margin-left: 1px; /* space between image and text */
+  margin-bottom: 100px;
+}
+
+.post-image {
+  display: block;
+  margin: auto;
+  width: 400px;   /* adjust as desired */
+  height: auto;
+}
