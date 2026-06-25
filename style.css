@@ -58,7 +58,7 @@ p {
   gap: 20px;
   align-items: center;
 
-  margin-bottom: -30px;
+  margin-bottom: 0px;
 }
 
 .image-list li::before {
