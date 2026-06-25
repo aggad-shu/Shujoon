@@ -43,3 +43,31 @@ p {
   width: 400px;   /* adjust as desired */
   height: auto;
 }
+
+
+
+.image-list {
+  list-style: none;
+    padding: 0;
+    margin-left: -40px; 
+}
+
+.image-list li {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 20px;
+  align-items: center;
+
+  margin-bottom: -50px;
+}
+
+.image-list li::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background: url("images/evil\ eye\ .PNG") no-repeat center;
+  background-size: contain;
+}
+
+a:link {color: #283a88; }
+a:visited {color: #283a88; }
