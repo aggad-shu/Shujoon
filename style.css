@@ -126,7 +126,7 @@ button {
 @media screen and (max-width: 768px) {
 
     .hero-image {
-        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("images/hero-mobile1.png");
+        background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  url("images/hero-mobile1.png");
     }
 
     .hero-text {
@@ -134,5 +134,5 @@ button {
         font-size: 0.9rem;
     }
 
-    .button { bottom: 20px;}
+    button { margin-top: 300px;}
 }
