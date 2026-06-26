@@ -100,7 +100,7 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color:white ;
 }
 
 html {
@@ -126,7 +126,7 @@ button {
 @media screen and (max-width: 768px) {
 
     .hero-image {
-        background-image: url("images/hero-mobile1.png");
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("images/hero-mobile1.png");
     }
 
     .hero-text {
