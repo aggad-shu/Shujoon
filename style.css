@@ -121,3 +121,18 @@ button {
 }
 
 #enter { color: white; }
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+
+    .hero-image {
+        height: 100vh;
+        background-position: center top;
+    }
+
+    .hero-text {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+}
