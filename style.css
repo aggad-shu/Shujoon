@@ -123,7 +123,7 @@ button {
 #enter { color: white; }
 
 /* Mobile styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
 
     .hero-image {
         height: 100vh;
