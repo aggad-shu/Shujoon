@@ -134,4 +134,5 @@ button {
         font-size: 0.9rem;
     }
 
+    .button { bottom: 20px;}
 }
