@@ -81,7 +81,7 @@ body, html {
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to 
   the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("images/hero2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("images/bighero.jpg");
 
   /* Set a specific height */
   height: 100%;
@@ -127,7 +127,7 @@ button {
 @media screen and (max-width: 768px) {
 
     .hero-image {
-        background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  url("images/hero-mobile1.png");
+        background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),  url("images/phone-hero.jpg");
     }
 
     .hero-text {
@@ -156,7 +156,7 @@ main {
 
 .hero-nav {
     position: absolute;
-    top: 25%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -166,9 +166,9 @@ main {
     gap: 4rem;
 
     width: fit-content;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
 
-    background: rgba(40, 58, 136, 0.45);
+    background: rgba(40, 58, 136, 0.8);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
 
@@ -181,7 +181,7 @@ main {
     text-decoration: none;
     /* text-transform: uppercase; */ 
     letter-spacing: 2px;
-    font-size: 1rem;
+    font-size: 2rem;
     transition: opacity 0.3s;
 }
 
