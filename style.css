@@ -136,6 +136,26 @@ button {
     }
 
     button { margin-top: 250px;}
+
+    .hero-nav {
+        top: 58%;
+
+        flex-direction: column;
+
+        gap: 1rem;
+
+        padding: 0.6rem 1.3rem;
+
+        border-radius: 20px;
+
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+    }
+
+    .hero-nav a {
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+    }
 }
 
 .page-bg {
