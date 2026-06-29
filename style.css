@@ -170,6 +170,61 @@ button {
     opacity: 0.7;
 }
 
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;
+    max-width: 1200px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+
+    background: rgba(40, 58, 136, 0.45);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+
+    z-index: 1000;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
 /* Mobile styles */
 @media screen and (max-width: 768px) {
 
