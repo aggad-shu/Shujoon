@@ -149,12 +149,12 @@ button {
     width: fit-content;
     padding: 1rem 1rem;
 
-    background: rgba(40, 58, 136, 0.8);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background: rgba(40, 58, 136, 0.6);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(px);
 
     border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 999px;
+    border-radius: 20px;
 }
 
 .hero-nav a {
@@ -162,7 +162,7 @@ button {
     text-decoration: none;
     /* text-transform: uppercase; */ 
     letter-spacing: 2px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     transition: opacity 0.3s;
 }
 
