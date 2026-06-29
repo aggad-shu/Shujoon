@@ -81,7 +81,7 @@ body, html {
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to 
   the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero1.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("images/hero2.jpg");
 
   /* Set a specific height */
   height: 100%;
@@ -150,3 +150,41 @@ main {
     z-index: 1;
 }
 
+.hero {
+    position: relative;
+}
+
+.hero-nav {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    width: fit-content;
+    padding: 1rem 3rem;
+
+    background: rgba(40, 58, 136, 0.45);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 999px;
+}
+
+.hero-nav a {
+    color: white;
+    text-decoration: none;
+    /* text-transform: uppercase; */ 
+    letter-spacing: 2px;
+    font-size: 1rem;
+    transition: opacity 0.3s;
+}
+
+.hero-nav a:hover {
+    opacity: 0.7;
+}
