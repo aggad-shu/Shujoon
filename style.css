@@ -9,6 +9,7 @@ body {
   font-family: 'CustomGaramond', serif;
   font-size: 20px;
   line-height: 1.7;
+  background: transparent;
 }
 
 p {
@@ -136,3 +137,16 @@ button {
 
     button { margin-top: 250px;}
 }
+
+.page-bg {
+    position: fixed;
+    inset: 0;
+    background:  url("images/background.png") center center / cover no-repeat; 
+    z-index: 0;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
