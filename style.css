@@ -266,7 +266,17 @@ main {
     gap: 2.5rem;
 }
 
+.hero-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 0.3rem 0;
+    font-size: 2rem;
+}
 
+.hero-link:hover {
+    opacity: 0.8;
+}
 
 /* Mobile styles */
 @media screen and (max-width: 768px) {
@@ -392,10 +402,14 @@ main {
     border-top: 1px solid rgba(255,255,255,0.2);
 }
 
-@media (max-width: 768px) {
+
     .hero-text h1 {
         font-size: 20vw;
         white-space: nowrap;
+    }
+
+    .hero-link {
+        font-size: 1.25rem;
     }
 
 
@@ -404,4 +418,5 @@ main {
 }
 
 
-}
+
+
