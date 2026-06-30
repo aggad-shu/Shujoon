@@ -8,20 +8,28 @@
 </head>
 
 <body>
-    <header class="navbar">
+   <header class="navbar">
+
     <div class="logo">
-        <a href="index.html">
-          <img src="images/Arabic english box.png" alt="Blue Horizon"> </a>
+        <a href="index.html"><img src="images/Arabic english box.png" alt="Blue Horizon"> </a>
     </div>
+
+    <button class="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
     <nav class="nav-links">
         <a href="about.html">About</a>
         <a href="posts.html">Posts</a>
         <a href="about.html#submit">Submit your Shujooon</a>
-        <a href="#" class="language-switch">العربية</a>
-
+        <div class="language-toggle">
+            <a href="#">EN</a>
+            <span>|</span>
+            <a href="#">العربية</a>
+        </div>
     </nav>
-
 
 </header>
 
@@ -42,5 +50,7 @@
 
     <a href="index.html"> <img src="images/sh.png" alt="Logo" class ="post-image"> </a>
 <p> Click the picture to return home.</p>
+
+<script src="script.js"></script>
 </body>
 </html>

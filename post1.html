@@ -11,19 +11,27 @@
 
 <body>
   <header class="navbar">
+
     <div class="logo">
-        <a href="index.html">
-          <img src="images/Arabic english box.png" alt="Blue Horizon"> </a>
+        <a href="index.html"><img src="images/Arabic english box.png" alt="Blue Horizon"> </a>
     </div>
+
+    <button class="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
     <nav class="nav-links">
         <a href="about.html">About</a>
         <a href="posts.html">Posts</a>
         <a href="about.html#submit">Submit your Shujooon</a>
-        <a href="#" class="language-switch">العربية</a>
-
+        <div class="language-toggle">
+            <a href="#">EN</a>
+            <span>|</span>
+            <a href="#">العربية</a>
+        </div>
     </nav>
-
 
 </header>
   
@@ -185,6 +193,6 @@ and when pizza was actually invented. Recipes are not sacred. Don’t tell me my
   
 
  
-
+<script src="script.js"></script>
 </body>
 </html>

@@ -223,6 +223,7 @@ button {
 .logo img {
     height: 50px;
     width: auto;
+    display: block;
 }
 
 main {
@@ -257,7 +258,7 @@ main {
         font-size: 0.9rem;
     }
 
-    button { margin-top: 250px;}
+
 
     .hero-nav {
         top: 50%;
@@ -355,6 +356,8 @@ main {
 
     border-radius: 20px;
     border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 .nav-links.active {
