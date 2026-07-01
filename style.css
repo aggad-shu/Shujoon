@@ -5,6 +5,11 @@
   font-style: normal;
 }
 
+h1 { font-family: "CustomGaramond" , sans-serif;
+text-transform:uppercase;
+}
+
+
 body {
   font-family: 'CustomGaramond', serif;
   font-size: 20px;
@@ -48,29 +53,6 @@ p {
 
 
 
-.image-list {
-  list-style: none;
-    padding: 0;
-    margin-left: -40px; 
-}
-
-.image-list li {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  gap: 20px;
-  align-items: center;
-
-  margin-bottom: 0px;
-}
-
-.image-list li::before {
-  content: "";
-  width: 100px;
-  height: 100px;
-  background: url("images/evil\ eye\ .PNG") no-repeat center;
-  background-size: contain;
-}
-
 a:link {color: #283a88; }
 a:visited {color: #283a88; }
 
@@ -98,7 +80,7 @@ body, html {
 /* Place text in the middle of the image */
 .hero-text {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -108,7 +90,7 @@ body, html {
 
 .hero-text h1 {
     margin: 0;
-    font-size: clamp(7rem, 22vw, 22rem);
+    font-size: clamp(7rem, 16vw, 16rem);
     font-weight: normal;
     line-height: 0.9;
     letter-spacing: 0;
@@ -278,6 +260,73 @@ main {
     opacity: 0.8;
 }
 
+.posts-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:45px 30px;
+
+    width:90%;
+
+    max-width:1500px;
+
+    margin:60px auto;
+
+}
+
+.post img{
+
+    width:100%;
+
+    aspect-ratio:2/3;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.post h2{
+
+    font-family: "Bebas Neue", sans-serif;
+    color: black
+
+    margin-top:18px;
+
+    margin-bottom:8px;
+
+    font-size:1.5rem;
+
+    font-weight:800;
+
+    text-transform:uppercase;
+
+    letter-spacing:-1px;
+
+}
+
+.post p{
+
+    font-family:Georgia, serif;
+
+    font-size:1rem;
+
+    line-height:1.5;
+
+    color:#333;
+    text-indent: 0px; 
+
+}
+
+.post{
+
+    margin-bottom:0px;
+
+}
+
+
 /* Mobile styles */
 @media screen and (max-width: 768px) {
 
@@ -404,13 +453,31 @@ main {
 
 
     .hero-text h1 {
-        font-size: 23vw;
+        font-size: 16vw;
         white-space: nowrap;
     }
 
     .hero-link {
         font-size: 1.25rem;
     }
+
+    .posts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 20px;
+        width: 95%;
+    }
+
+    .post h2 {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        margin-bottom: 6px;
+    }
+
+    .post p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
 
 
 
