@@ -492,20 +492,49 @@ main {
 ===================== */
 
 @font-face {
-  font-family: 'ruqaa';
-  src: url('fonts/BadeenDisplay-Regular.ttf') format('truetype');
+  font-family: '3antara';
+  src: url('fonts/ALLEXPO3ANTARA.otf') format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'lulu';
+  src: url('fonts/ALLEXP03LULULEESH.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ghoul';
+  src: url('fonts/ALLEXP03ALGHOUL.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sahlab';
+  src: url('fonts/ALLEXP03SAHLAB.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'shif';
+  src: url('fonts/ALLEXP03SHIFRA.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 html[dir="rtl"] body {
-    font-family: "Noto Sans Arabic", sans-serif;
+    font-family: "shif", sans-serif;
 }
 
 html[dir="rtl"] h1,
 html[dir="rtl"] h2,
 html[dir="rtl"] h3 {
-    font-family: "ruqaa", sans-serif;
+    font-family: "lulu", sans-serif;
     text-transform: none;
 }
 
@@ -515,7 +544,7 @@ html[dir="rtl"] .hero-link {
 }
 
 html[dir="rtl"] .hero-text h1 {
-    font-size: clamp(5rem, 12vw, 10rem);
+    font-size: clamp(5rem, 24vw, 24rem);
     
 }
 
