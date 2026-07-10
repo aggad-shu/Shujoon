@@ -326,6 +326,51 @@ main {
 
 }
 
+.category-section{
+    width:90%;
+    max-width:1500px;
+    margin:10px auto;
+}
+
+.category-section h2{
+    font-family:"Bebas Neue", sans-serif;
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.category-row{
+
+    display:flex;
+
+    gap:30px;
+
+    overflow-x:auto;
+
+    overflow-y:hidden;
+
+    scroll-behavior:smooth;
+
+    padding-bottom:10px;
+
+}
+
+.category-row .post{
+
+    flex:0 0 280px;
+
+    margin-bottom:0;
+
+}
+
+.category-row .post h2 {
+    font-size: 1.5rem;
+}
+
+.featured-posts h1,
+.category-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 /* Mobile styles */
 @media screen and (max-width: 768px) {
@@ -478,6 +523,9 @@ main {
         line-height: 1.4;
     }
 
+.category-row .post{
+        flex:0 0 180px;
+    }
 
 
 
