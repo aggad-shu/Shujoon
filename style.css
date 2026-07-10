@@ -111,6 +111,7 @@ html {
   scroll-behavior:smooth;
 }
 
+/*
 button {
   background-color:#283a88 ;
   border: black;
@@ -123,7 +124,7 @@ button {
   font-size: 24px;
   cursor: pointer;
 }
-
+*/
 
 
 .page-bg {
@@ -370,6 +371,50 @@ main {
 .category-section h1 {
     text-align: center;
     margin-bottom: 20px;
+}
+
+.scroll-wrapper{
+    position:relative;
+}
+
+.scroll-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 52px;
+    height: 52px;
+
+    border: 1px solid rgba(40, 58, 136, 0.7);
+    border-radius: 50%;
+
+    background: rgba(40, 58, 136, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    color: white;
+    font-size: 1.6rem;
+    line-height: 1;
+
+    cursor: pointer;
+    z-index: 10;
+
+    transition: background 0.2s ease,
+                transform 0.2s ease;
+}
+
+.scroll-btn:active {
+
+    transform: translateY(-50%) scale(0.95);
+
+}
+
+.left{
+    left:-25px;
+}
+
+.right{
+    right:-25px;
 }
 
 /* Mobile styles */
