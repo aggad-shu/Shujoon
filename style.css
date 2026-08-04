@@ -45,6 +45,14 @@ p {
   margin-bottom: 100px;
 }
 
+video {display: block;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+
+}
+
 .post-image {
     display: block;
     margin: 2rem auto;
