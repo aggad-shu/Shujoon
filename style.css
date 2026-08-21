@@ -632,6 +632,26 @@ main {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'kashef';
+  src: url('fonts/ALLEXP02KASHEF.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mema';
+  src: url('fonts/ALLEXP02MEMA-Regular.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sukoon';
+  src: url('fonts/ALLEXP02SUKOON.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 html[dir="rtl"] body {
     font-family: "shif", sans-serif;
@@ -646,7 +666,7 @@ html[dir="rtl"] .hero-text h1 {
 html[dir="rtl"] h1,
 html[dir="rtl"] h2,
 html[dir="rtl"] h3 {
-    font-family: "sahlab", sans-serif;
+    font-family: "sukoon", sans-serif;
     text-transform: none;
 }
 
