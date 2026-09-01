@@ -22,6 +22,7 @@ body {
 p {
   text-align: justify;
   text-indent: 30px; /* adjust pixels as needed */
+
 }
 
 .title {
@@ -34,6 +35,8 @@ p {
   max-width: 700px;   /* Adjust to taste */
   margin: 0 auto;      /* Centers it horizontally */
   padding: 0 20px;     /* Optional padding inside */
+   background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.15); 
 }
 
 
@@ -528,6 +531,7 @@ main {
         width: 92%;
         margin: 0 auto;
         padding: 0;
+        
     }
 
     .title {
