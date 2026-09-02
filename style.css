@@ -488,6 +488,19 @@ main {
     right:-25px;
 }
 
+.youtube-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    aspect-ratio: 16 / 9;
+}
+
+.youtube-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 /* Mobile styles */
 @media screen and (max-width: 768px) {
 
