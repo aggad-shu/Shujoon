@@ -809,6 +809,13 @@ main {
 }
 
 @font-face {
+  font-family: 'jomhuria';
+  src: url('fonts/Jomhuria-Regular.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'kashef';
   src: url('fonts/ALLEXP02KASHEF.otf') format("opentype");
   font-weight: normal;
@@ -829,8 +836,29 @@ main {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'amira';
+  src: url('fonts/Amiri-Regular.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kalami';
+  src: url('fonts/Alkalami-Regular.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'reem';
+  src: url('fonts/ReemKufi-VariableFont_wght.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html[dir="rtl"] body {
-    font-family: "shif", sans-serif;
+    font-family: "amira";
+   
 }
 
 html[dir="rtl"] .hero-text h1 {
@@ -849,8 +877,15 @@ html[dir="rtl"] .hero-text {
 html[dir="rtl"] h1,
 html[dir="rtl"] h2,
 html[dir="rtl"] h3 {
-    font-family: "sukoon", sans-serif;
+    font-family: "reem", sans-serif;
     text-transform: none;
+}
+
+html[dir="rtl"] .post p {
+    font-family: "amira";
+}
+html[dir="rtl"] .nav-links {
+    font-family: "sukoon", sans-serif;
 }
 
 html[dir="rtl"] .nav-links a,
