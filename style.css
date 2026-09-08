@@ -121,6 +121,14 @@ body, html {
     width: 90%;
 }
 
+.hero-logo {
+  display: block;      /* kills the inline whitespace gap below the image */
+  width: 100%;          /* scale to fill hero-text's width... */
+  max-width: 900px;     /* ...but cap it so it doesn't get huge on wide screens */
+  height: auto;         /* preserve aspect ratio */
+  margin: 0 auto 1rem;  /* center it and control spacing below (adjust 1rem as needed) */
+}
+
 .hero-text h1 {
     font-family: "boca";
     text-transform: initial;
@@ -134,7 +142,7 @@ body, html {
 }
 
 .hero-text p {
-    margin-top: 6rem;
+    margin-top: 0rem;
     text-align: center;
     text-indent: 0;
     font-size: clamp(1.2rem, 2vw, 2rem);
