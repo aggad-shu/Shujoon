@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /posts-folder/opinion/template
+Disallow: /posts-folder/opinion/template.html
+Disallow: /posts-folder/poetry/template
+Disallow: /posts-folder/poetry/template.html
+
+Sitemap: https://shujooon.com/sitemap.xml
