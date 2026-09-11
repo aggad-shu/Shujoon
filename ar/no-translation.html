@@ -1,4 +1,5 @@
-
+---
+---
 
 <!DOCTYPE html>
 <html lang="ar" dir = "rtl">
@@ -11,39 +12,16 @@
 
 <body>
   
-  <header class="navbar">
-
-    <div class="logo">
-        <a href="index.html"> <img src="../images/Arabic english box.png" alt="Shujooon Logo"> </a>
-    </div>
-
-    <button class="hamburger" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <nav class="nav-links">
-        <a href="about.html">من نحن</a>
-        <a href="posts.html">اقرأ</a>
-        <a href="about.html#submit">إرسال شجونك</a>
-        <div class="language-toggle">
-            <a href="../index.html">EN</a>
-            <span>|</span>
-            <a href="#">العربية</a>
-        </div>
-    </nav>
-
-</header> 
+  {% include nav.html lang="ar" toggle="/" %} 
 
   <div class="hero-image">
   
   <div class="hero-text">
         <h1>للأسف</h1>
         <p>الترجمة ليست موجودة :( إذا حبيت تساعد ارسل إلى  submit@shujooon.com</p>
-        <a href="posts.html" class="hero-link">ابدأ القراءة</a>
-        <a href="about.html" class="hero-link">من نحن</a>
-        <a href="about.html#submit" class="hero-link">إرسال شجونك</a>
+        <a href="posts" class="hero-link">ابدأ القراءة</a>
+        <a href="about" class="hero-link">من نحن</a>
+        <a href="about#submit" class="hero-link">إرسال شجونك</a>
     </div>
 
   </div>

@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,33 +12,7 @@
 
 <body>
 
-<header class="navbar">
-
-    <div class="logo">
-        <a href="../../index.html">
-            <img src="../../images/Arabic english box.png" alt="Shujooon">
-        </a>
-    </div>
-
-    <button class="hamburger" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <nav class="nav-links">
-        <a href="../../about.html">About</a>
-        <a href="../../posts.html">Read</a>
-        <a href="../../about.html#submit">Submit your Shujooon</a>
-
-        <div class="language-toggle">
-            <a href="#">EN</a>
-            <span>|</span>
-            <a href="../../ar/posts-folder/opinion/love-apathy.html">العربية</a>
-        </div>
-    </nav>
-
-</header>
+{% include nav.html toggle="/ar/posts-folder/opinion/love-apathy" %}
 
 <div class="page-bg"></div>
 
@@ -93,7 +70,7 @@ We can only try to get close.
 </p>
 
 
-        <a href="../../index.html">
+        <a href="../../index">
             <img src="../../images/sh.png"
                  alt="Logo"
                  class="post-image">

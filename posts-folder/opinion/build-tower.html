@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,33 +12,7 @@
 
 <body>
 
-<header class="navbar">
-
-    <div class="logo">
-        <a href="/">
-            <img src="/images/Arabic english box.png" alt="Shujooon">
-        </a>
-    </div>
-
-    <button class="hamburger" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <nav class="nav-links">
-        <a href="/about">About</a>
-        <a href="/posts">Read</a>
-        <a href="/about#submit">Submit your Shujooon</a>
-
-        <div class="language-toggle">
-            <a href="#">EN</a>
-            <span>|</span>
-            <a href="#">العربية</a>
-        </div>
-    </nav>
-
-</header>
+{% include nav.html toggle="#" %}
 
 <div class="page-bg"></div>
 

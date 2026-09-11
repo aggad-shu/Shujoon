@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="ar" dir = "rtl">
 <head>
@@ -10,30 +13,7 @@
 <body>
 
 
-<header class="navbar">
-
-    <div class="logo">
-        <a href="index.html"> <img src="../images/Arabic english box.png" alt="Blue Horizon"> </a>
-    </div>
-
-    <button class="hamburger" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <nav class="nav-links">
-        <a href="about.html">من نحن</a>
-        <a href="posts.html">اقرأ</a>
-        <a href="about.html#submit">إرسال شجونك</a>
-        <div class="language-toggle">
-            <a href="../posts.html">EN</a>
-            <span>|</span>
-            <a href="#">العربية</a>
-        </div>
-    </nav>
-
-</header>
+{% include nav.html lang="ar" toggle="/posts" %}
 
 <!-- 
   <div class="page-bg"> </div>
@@ -44,13 +24,13 @@
 
 
  <ul class = "image-list">
-      <li><a href="post1.html" color = >Food Nationalism</a></li>
-      <li><a href="post2.html">The Arab Cinematic Universe Needs to Happen </a></li>
-      <li><a href="post3.html"> Naguib Mahfouz & Organised Spontaneity </a></li>
+      <li><a href="post1" color = >Food Nationalism</a></li>
+      <li><a href="post2">The Arab Cinematic Universe Needs to Happen </a></li>
+      <li><a href="post3"> Naguib Mahfouz & Organised Spontaneity </a></li>
     </ul>
 
 
-    <a href="index.html"> <img src="images/sh.png" alt="Logo" class ="post-image"> </a>
+    <a href="index"> <img src="images/sh.png" alt="Logo" class ="post-image"> </a>
 <p> Click the picture to return home.</p>
 -->
 <div class="page-bg"> </div>
@@ -67,12 +47,12 @@
 <div class="category-row">
 
     <article class="post">
-                <a href="posts-folder/opinion/sex-obsession.html">
+                <a href="posts-folder/opinion/sex-obsession">
                 <img src="../images/opinion/Tuqan.jpg" alt="Fadwa Tuqan">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/sex-obsession.html">هَوَس الجنس في العالم العربي</a>
+                <a href="posts-folder/opinion/sex-obsession">هَوَس الجنس في العالم العربي</a>
             </h2>
 
             <p>
@@ -81,12 +61,12 @@
             </article>
 
 <article class="post">
-                <a href="posts-folder/opinion/flood.html">
+                <a href="posts-folder/opinion/flood">
                 <img src="../images/opinion/flood/van.jpg" alt="Book Van">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/flood.html">طوفان عمان ومحل الماء</a>
+                <a href="posts-folder/opinion/flood">طوفان عمان ومحل الماء</a>
             </h2>
 
             <p>
@@ -95,12 +75,12 @@
             </article>
 
     <article class="post">
-                <a href="posts-folder/opinion/koobideh.html">
+                <a href="posts-folder/opinion/koobideh">
                 <img src="../images/opinion/koobideh/pizza.JPG" alt="Carl Jung Tower Bollingen">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/koobideh.html">كوبيدة، تمن الدود والسلطان </a>
+                <a href="posts-folder/opinion/koobideh">كوبيدة، تمن الدود والسلطان </a>
             </h2>
 
             <p>
@@ -109,12 +89,12 @@
             </article>
             
     <article class="post">
-                <a href="../ar/no-translation.html">
+                <a href="../ar/no-translation">
                 <img src="../images/opinion/matrix.jpg" alt="Carl Jung Tower Bollingen">
             </a>
 
             <h2>
-                <a href="../ar/no-translation.html">مدينة ترد الكلام</a>
+                <a href="../ar/no-translation">مدينة ترد الكلام</a>
             </h2>
 
             <p>
@@ -122,12 +102,12 @@
             </article>
 
     <article class="post">
-                <a href="../ar/no-translation.html">
+                <a href="../ar/no-translation">
                 <img src="../images/opinion/yazan.jpg" alt="Carl Jung Tower Bollingen">
             </a>
 
             <h2>
-                <a href="../ar/no-translation.html">ابن برجا</a>
+                <a href="../ar/no-translation">ابن برجا</a>
             </h2>
 
             <p>
@@ -136,12 +116,12 @@
             </article>
 
 <article class="post">
-                <a href="posts-folder/poetry/inches.html">
+                <a href="posts-folder/poetry/inches">
                 <img src="../images/poetry/lakehouse.JPG" alt="Lakehouse by Barry McGlashan">
             </a>
 
             <h2>
-                <a href="posts-folder/poetry/inches.html">وحدة وحدة
+                <a href="posts-folder/poetry/inches">وحدة وحدة
                 </a>
             </h2>
 
@@ -152,12 +132,12 @@
             </article>
 
     <article class="post">
-                <a href="posts-folder/opinion/love-apathy.html">
+                <a href="posts-folder/opinion/love-apathy">
                 <img src="../images/opinion/love.JPG" alt="Sunset in Jordan">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/love-apathy.html"> الحب واللامبالاة </a>
+                <a href="posts-folder/opinion/love-apathy"> الحب واللامبالاة </a>
             </h2>
 
             <p>
@@ -170,12 +150,12 @@
             
 
     <article class="post">
-                <a href="posts-folder/poetry/pots-pans.html">
+                <a href="posts-folder/poetry/pots-pans">
                 <img src="../images/poetry/pot.JPG" alt="">
             </a>
 
             <h2>
-                <a href="posts-folder/poetry/pots-pans.html">طناجر مقالي</a>
+                <a href="posts-folder/poetry/pots-pans">طناجر مقالي</a>
             </h2>
 
             <p>
@@ -185,12 +165,12 @@
 
 <article class="post">
 
-            <a href="posts-folder/opinion/post6.html">
+            <a href="posts-folder/opinion/post6">
                 <img src="../images/afla.jpeg" alt="">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post6.html">هل يستطيع الفيلسوف بناء جسر؟</a>
+                <a href="posts-folder/opinion/post6">هل يستطيع الفيلسوف بناء جسر؟</a>
             </h2>
 
             <p>
@@ -201,12 +181,12 @@
 
 <article class="post">
 
-            <a href="posts-folder/opinion/post5.html">
+            <a href="posts-folder/opinion/post5">
                 <img src="../images/omar.JPG" alt="">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post5.html">هل الموسيقار بيزهق من نفس الأغنية؟</a>
+                <a href="posts-folder/opinion/post5">هل الموسيقار بيزهق من نفس الأغنية؟</a>
             </h2>
 
             <p>
@@ -217,12 +197,12 @@
 
 <article class="post">
 
-            <a href="posts-folder/opinion/post4.html">
+            <a href="posts-folder/opinion/post4">
                 <img src="../images/post4.jpg" alt="">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post4.html"> عربي للأكراد وكردي للعرب</a>
+                <a href="posts-folder/opinion/post4"> عربي للأكراد وكردي للعرب</a>
             </h2>
 
             <p>
@@ -233,12 +213,12 @@
 
 <article class="post">
 
-            <a href="posts-folder/opinion/post3.html">
+            <a href="posts-folder/opinion/post3">
                 <img src="../images/mahfouz.JPG" alt="">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post3.html"> نجيب محفوظ والتلقائية المنظمة</a>
+                <a href="posts-folder/opinion/post3"> نجيب محفوظ والتلقائية المنظمة</a>
             </h2>
 
             <p>
@@ -267,12 +247,12 @@
         <div class="category-row">
 
             <article class="post">
-                <a href="posts-folder/opinion/sex-obsession.html">
+                <a href="posts-folder/opinion/sex-obsession">
                 <img src="../images/opinion/Tuqan.jpg" alt="Fadwa Tuqan">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/sex-obsession.html">هَوَس الجنس في العالم العربي</a>
+                <a href="posts-folder/opinion/sex-obsession">هَوَس الجنس في العالم العربي</a>
             </h2>
 
             <p>
@@ -281,12 +261,12 @@
             </article>
 
             <article class="post">
-                <a href="posts-folder/opinion/flood.html">
+                <a href="posts-folder/opinion/flood">
                 <img src="../images/opinion/flood/van.jpg" alt="Book Van">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/flood.html">طوفان عمان ومحل الماء</a>
+                <a href="posts-folder/opinion/flood">طوفان عمان ومحل الماء</a>
             </h2>
 
             <p>
@@ -295,12 +275,12 @@
         </article>
 
             <article class="post">
-                <a href="posts-folder/opinion/koobideh.html">
+                <a href="posts-folder/opinion/koobideh">
                 <img src="../images/opinion/koobideh/pizza.JPG" alt="Carl Jung Tower Bollingen">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/koobideh.html">كوبيدة، تمن الدود والسلطان </a>
+                <a href="posts-folder/opinion/koobideh">كوبيدة، تمن الدود والسلطان </a>
             </h2>
 
             <p>
@@ -309,12 +289,12 @@
             </article>
             
     <article class="post">
-                <a href="posts-folder/opinion/city.html">
+                <a href="posts-folder/opinion/city">
                 <img src="../images/opinion/matrix.jpg" alt="Carl Jung Tower Bollingen">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/city.html">مدينة ترد الكلام</a>
+                <a href="posts-folder/opinion/city">مدينة ترد الكلام</a>
             </h2>
 
             <p>
@@ -322,12 +302,12 @@
             </article>
 
     <article class="post">
-                <a href="../ar/no-translation.html">
+                <a href="../ar/no-translation">
                 <img src="../images/opinion/yazan.jpg" alt="Carl Jung Tower Bollingen">
             </a>
 
             <h2>
-                <a href="../ar/no-translation.html">ابن برجا</a>
+                <a href="../ar/no-translation">ابن برجا</a>
             </h2>
 
             <p>
@@ -336,12 +316,12 @@
             </article>
 
             <article class="post">
-                <a href="posts-folder/opinion/love-apathy.html">
+                <a href="posts-folder/opinion/love-apathy">
                 <img src="../images/opinion/love.JPG" alt="Sunset in Jordan">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/love-apathy.html"> الحب واللامبالاة </a>
+                <a href="posts-folder/opinion/love-apathy"> الحب واللامبالاة </a>
             </h2>
 
             <p>
@@ -351,12 +331,12 @@
 
             <article class="post">
 
-            <a href="posts-folder/opinion/did-not-become-meeting.html">
+            <a href="posts-folder/opinion/did-not-become-meeting">
                 <img src="../images/opinion/linked3ein1.jpg" alt="Linkedin logo with Evil Eye">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/did-not-become-meeting.html">لينكد عين</a>
+                <a href="posts-folder/opinion/did-not-become-meeting">لينكد عين</a>
             </h2>
 
             <p>
@@ -367,12 +347,12 @@
 
 <article class="post">
 
-            <a href="posts-folder/opinion/post6.html">
+            <a href="posts-folder/opinion/post6">
                 <img src="../images/afla.jpeg" alt="">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post6.html">هل يستطيع الفيلسوف بناء جسر؟</a>
+                <a href="posts-folder/opinion/post6">هل يستطيع الفيلسوف بناء جسر؟</a>
             </h2>
 
             <p>
@@ -383,12 +363,12 @@
 
 <article class="post">
 
-            <a href="posts-folder/opinion/post5.html">
+            <a href="posts-folder/opinion/post5">
                 <img src="../images/omar.JPG" alt="">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post5.html">هل الموسيقار بيزهق من نفس الأغنية؟</a>
+                <a href="posts-folder/opinion/post5">هل الموسيقار بيزهق من نفس الأغنية؟</a>
             </h2>
 
             <p>
@@ -399,12 +379,12 @@
 
 <article class="post">
 
-            <a href="posts-folder/opinion/post4.html">
+            <a href="posts-folder/opinion/post4">
                 <img src="../images/post4.jpg" alt="">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post4.html"> عربي للأكراد وكردي للعرب</a>
+                <a href="posts-folder/opinion/post4"> عربي للأكراد وكردي للعرب</a>
             </h2>
 
             <p>
@@ -415,12 +395,12 @@
 
 <article class="post">
 
-            <a href="posts-folder/opinion/post3.html">
+            <a href="posts-folder/opinion/post3">
                 <img src="../images/mahfouz.JPG" alt="">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post3.html"> نجيب محفوظ والتلقائية المنظمة</a>
+                <a href="posts-folder/opinion/post3"> نجيب محفوظ والتلقائية المنظمة</a>
             </h2>
 
             <p>
@@ -432,12 +412,12 @@
 
     <article class="post">
 
-            <a href="posts-folder/opinion/post2.html">
+            <a href="posts-folder/opinion/post2">
                 <img src="../images/saddam.jpeg" alt="">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post2.html">آن أوان قيام عالم سينمائي عربي</a>
+                <a href="posts-folder/opinion/post2">آن أوان قيام عالم سينمائي عربي</a>
             </h2>
 
             <p>
@@ -449,12 +429,12 @@
         
 <article class="post">
 
-            <a href="posts-folder/opinion/post1.html">
+            <a href="posts-folder/opinion/post1">
                 <img src="../images/howtocook.jpeg" alt="">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post1.html">الطعام والقومية</a>
+                <a href="posts-folder/opinion/post1">الطعام والقومية</a>
             </h2>
 
             <p>
@@ -485,12 +465,12 @@
         <div class="category-row">
 
             <article class="post">
-                <a href="posts-folder/opinion/flood.html">
+                <a href="posts-folder/opinion/flood">
                 <img src="../images/opinion/flood/van.jpg" alt="Book Van">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/flood.html">طوفان عمان ومحل الماء</a>
+                <a href="posts-folder/opinion/flood">طوفان عمان ومحل الماء</a>
             </h2>
 
             <p>
@@ -499,12 +479,12 @@
         </article>
 
             <article class="post">
-                <a href="posts-folder/poetry/inches.html">
+                <a href="posts-folder/poetry/inches">
                 <img src="../images/poetry/lakehouse.JPG" alt="Lakehouse by Barry McGlashan">
             </a>
 
             <h2>
-                <a href="posts-folder/poetry/inches.html">وحدة وحدة</a>
+                <a href="posts-folder/poetry/inches">وحدة وحدة</a>
             </h2>
 
             <p>
@@ -514,12 +494,12 @@
             </article>
 
             <article class="post">
-                <a href="../ar/no-translation.html">
+                <a href="../ar/no-translation">
                 <img src="../images/poetry/fire.JPG" alt="Yarnatas Fire in Cirali">
             </a>
 
             <h2>
-                <a href="../ar/no-translation.html">اعتن بنارك</a>
+                <a href="../ar/no-translation">اعتن بنارك</a>
             </h2>
 
             <p>
@@ -529,12 +509,12 @@
 
 
             <article class="post">
-                <a href="posts-folder/poetry/pots-pans.html">
+                <a href="posts-folder/poetry/pots-pans">
                 <img src="../images/poetry/pot.JPG" alt="">
             </a>
 
             <h2>
-                <a href="posts-folder/poetry/pots-pans.html">طناجر مقالي</a>
+                <a href="posts-folder/poetry/pots-pans">طناجر مقالي</a>
             </h2>
 
             <p>
@@ -561,12 +541,12 @@
         <div class="category-row">
 
 <article class="post">
-                <a href="posts-folder/photography/thames.html">
+                <a href="posts-folder/photography/thames">
                 <img src="../images/Photography/thames/eastvswest.JPG" alt="East vs West">
             </a>
 
             <h2>
-                <a href="posts-folder/photography/thames.html">على نهر لندن</a>
+                <a href="posts-folder/photography/thames">على نهر لندن</a>
             </h2>
 
             <p>
@@ -575,12 +555,12 @@
             </article>
 
             <article class="post">
-                <a href="posts-folder/photography/depression.html">
+                <a href="posts-folder/photography/depression">
                 <img src="../images/Photography/depression.jpg" alt="Depression Meal">
             </a>
 
             <h2>
-                <a href="posts-folder/photography/depression.html">الاكتئاب الحديث</a>
+                <a href="posts-folder/photography/depression">الاكتئاب الحديث</a>
             </h2>
 
             <p>

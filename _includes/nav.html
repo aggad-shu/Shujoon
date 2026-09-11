@@ -10,6 +10,18 @@
 <span></span>
 </button>
 
+{% if include.lang == "ar" %}
+<nav class="nav-links">
+<a href="/about">من نحن</a>
+<a href="/posts">اقرأ</a>
+<a href="/about#submit">إرسال شجونك</a>
+<div class="language-toggle">
+<a href="{{ include.toggle | default: '#' }}">EN</a>
+<span>|</span>
+<a href="#">العربية</a>
+</div>
+</nav>
+{% else %}
 <nav class="nav-links">
 <a href="/about">About</a>
 <a href="/posts">Read</a>
@@ -17,8 +29,9 @@
 <div class="language-toggle">
 <a href="#">EN</a>
 <span>|</span>
-<a href="/ar/index">العربية</a>
+<a href="{{ include.toggle | default: '#' }}">العربية</a>
 </div>
 </nav>
+{% endif %}
 
 </header>

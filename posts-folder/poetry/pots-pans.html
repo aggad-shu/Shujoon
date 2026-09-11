@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,33 +12,7 @@
 
 <body>
 
-<header class="navbar">
-
-    <div class="logo">
-        <a href="../../index.html">
-            <img src="../../images/Arabic english box.png" alt="Shujooon">
-        </a>
-    </div>
-
-    <button class="hamburger" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <nav class="nav-links">
-        <a href="../../about.html">About</a>
-        <a href="../../posts.html">Read</a>
-        <a href="../../about.html#submit">Submit your Shujooon</a>
-
-        <div class="language-toggle">
-            <a href="../../ar/posts-folder/poetry/pots-pans.html">EN</a>
-            <span>|</span>
-            <a href="#">العربية</a>
-        </div>
-    </nav>
-
-</header>
+{% include nav.html toggle="#" %}
 
 <div class="page-bg"></div>
 
@@ -69,7 +46,7 @@ There is power in silence, there is freedom in silence.
 <br> <br>
 Let the kettle whistle, it is futile to shout over it. Why do you want to compete with noise? </p>
 
-        <a href="../../index.html">
+        <a href="../../index">
             <img src="../../images/sh.png"
                  alt="Logo"
                  class="post-image">

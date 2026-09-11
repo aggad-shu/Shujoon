@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="ar" dir = "rtl">
 <head>
@@ -10,30 +13,7 @@
 <body>
 
 
-<header class="navbar">
-
-    <div class="logo">
-        <a href="../../index.html"> <img src="../../../../images/Arabic english box.png" alt="Blue Horizon"> </a>
-    </div>
-
-    <button class="hamburger" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <nav class="nav-links">
-        <a href="../../about.html">من نحن</a>
-        <a href="../../posts.html">اقرأ</a>
-        <a href="../../about.html#submit">إرسال شجونك</a>
-        <div class="language-toggle">
-            <a href="../../../posts-folder/opinion/love-apathy.html">EN</a>
-            <span>|</span>
-            <a href="#">العربية</a>
-        </div>
-    </nav>
-
-</header>
+{% include nav.html lang="ar" toggle="/posts-folder/opinion/love-apathy" %}
   
 <div class="page-bg"> </div>
 
@@ -76,7 +56,7 @@
 
 
 
-        <a href="../../index.html"> <img src="../../../images/sh.png" alt="Logo" class ="post-image"> </a>
+        <a href="../../index"> <img src="../../../images/sh.png" alt="Logo" class ="post-image"> </a>
   <p> </p>
   </div>
 

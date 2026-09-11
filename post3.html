@@ -1,3 +1,5 @@
+---
+---
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,30 +12,7 @@
 
 
 <body>
-  <header class="navbar">
-
-    <div class="logo">
-        <a href="index.html"><img src="images/Arabic english box.png" alt="Blue Horizon"> </a>
-    </div>
-
-    <button class="hamburger" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <nav class="nav-links">
-        <a href="about.html">About</a>
-        <a href="posts.html">Read</a>
-        <a href="about.html#submit">Submit your Shujooon</a>
-        <div class="language-toggle">
-            <a href="#">EN</a>
-            <span>|</span>
-            <a href="ar/posts-folder/opinion/post3.html">العربية</a>
-        </div>
-    </nav>
-
-</header>
+  {% include nav.html toggle="/ar/posts-folder/opinion/post3" %}
 
   <div class="page-bg"> </div>
   <main> 
@@ -132,7 +111,7 @@ Aren't all of those spontaneous moments? But you still want the organisation."
 
 
   
-<a href="index.html"> <img src="images/sh.png" alt="Logo" class ="post-image"> </a>
+<a href="index"> <img src="images/sh.png" alt="Logo" class ="post-image"> </a>
   <p> Click the picture to return home.</p>
   </div>
   
