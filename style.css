@@ -67,6 +67,8 @@ video {display: block;
     width: 100%;
     max-width: 700px;
     height: auto;
+    max-height: 80vh;
+    object-fit: contain;
 
 }
 
@@ -513,6 +515,13 @@ main {
 @media screen and (max-width: 768px) {
 
      .post-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: none;
+    }
+
+    video {
         width: 100%;
         max-width: 100%;
         height: auto;
