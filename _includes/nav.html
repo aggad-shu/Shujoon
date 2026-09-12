@@ -1,7 +1,7 @@
 <header class="navbar">
 
 <div class="logo">
-<a href="/"> <img src="/images/Arabic english box.png" alt="Shujooon Logo"> </a>
+<a href="{% if include.lang == "ar" %}/ar/{% else %}/{% endif %}"> <img src="/images/Arabic english box.png" alt="Shujooon Logo"> </a>
 </div>
 
 <button class="hamburger" aria-label="Toggle navigation">
