@@ -1,0 +1,81 @@
+{%- comment -%}
+SEO tags for every page. Reads these front matter fields:
+  title        page title (required)
+  description  one line shown under the link in Google and in link previews
+  image        main image, e.g. /images/opinion/rai/disco-maghreb.jpeg
+  translation  the same page in the other language, e.g. /ar/posts-folder/opinion/flood
+  author       from the byline; a list for more than one author
+  date         from the byline, as YYYY-MM-DD (or "YYYY" in quotes if only the year is known)
+  noindex      true to keep the page out of Google and the sitemap
+{%- endcomment -%}
+{%- assign prefix = page.url | slice: 0, 4 -%}
+{%- if prefix == '/ar/' -%}
+  {%- assign lang = 'ar' -%}{%- assign site_name = 'شجون' -%}{%- assign locale = 'ar_AR' -%}
+{%- else -%}
+  {%- assign lang = 'en' -%}{%- assign site_name = 'Shujooon' -%}{%- assign locale = 'en_GB' -%}
+{%- endif -%}
+{%- assign clean_url = page.url | remove: 'index.html' | replace: '.html', '' -%}
+{%- assign canonical = clean_url | absolute_url -%}
+{%- assign image = page.image | default: '/web-app-manifest-512x512.png' | absolute_url -%}
+{%- if clean_url == '/' or clean_url == '/ar/' -%}
+  {%- assign full_title = page.title -%}
+{%- else -%}
+  {%- assign full_title = page.title | append: ' | ' | append: site_name -%}
+{%- endif -%}
+<title>{{ full_title }}</title>
+{%- if page.description %}
+<meta name="description" content="{{ page.description | escape }}">
+{%- endif %}
+{%- if page.noindex %}
+<meta name="robots" content="noindex">
+{%- else %}
+<link rel="canonical" href="{{ canonical }}">
+{%- if page.translation %}
+{%- assign other = page.translation | absolute_url -%}
+{%- if lang == 'ar' %}{% assign en_url = other %}{% assign ar_url = canonical %}{% else %}{% assign en_url = canonical %}{% assign ar_url = other %}{% endif %}
+<link rel="alternate" hreflang="en" href="{{ en_url }}">
+<link rel="alternate" hreflang="ar" href="{{ ar_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ en_url }}">
+{%- endif %}
+{%- endif %}
+<meta property="og:site_name" content="{{ site_name }}">
+<meta property="og:title" content="{{ page.title | escape }}">
+{%- if page.description %}
+<meta property="og:description" content="{{ page.description | escape }}">
+{%- endif %}
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:image" content="{{ image }}">
+<meta property="og:locale" content="{{ locale }}">
+<meta name="twitter:card" content="summary_large_image">
+{%- if page.author %}
+<meta property="og:type" content="article">
+<meta name="author" content="{{ page.author | join: ', ' | escape }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.title | jsonify }},
+  "inLanguage": "{{ lang }}",
+  {%- if page.description %}
+  "description": {{ page.description | jsonify }},
+  {%- endif %}
+  {%- if page.date %}
+  "datePublished": "{% if page.date.size == 4 %}{{ page.date }}{% else %}{{ page.date | date: '%Y-%m-%d' }}{% endif %}",
+  {%- endif %}
+  "image": "{{ image }}",
+  "author": [
+    {%- for name in page.author %}
+    { "@type": "Person", "name": {{ name | jsonify }} }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shujooon",
+    "logo": { "@type": "ImageObject", "url": "{{ '/web-app-manifest-512x512.png' | absolute_url }}" }
+  },
+  "mainEntityOfPage": "{{ canonical }}"
+}
+</script>
+{%- else %}
+<meta property="og:type" content="website">
+{%- endif %}

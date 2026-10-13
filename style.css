@@ -941,3 +941,23 @@ html[dir="rtl"] .hero-text p {
 
 }
 
+
+/* Side-by-side poem translations */
+.poem-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+    line-height: 1.8;
+}
+
+.poem-col[dir="rtl"] {
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    .poem-columns {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

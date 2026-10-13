@@ -1,2 +1,5 @@
 title: Shujooon
 url: "https://shujooon.com"
+
+plugins:
+  - jekyll-redirect-from

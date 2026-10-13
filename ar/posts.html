@@ -1,4 +1,7 @@
 ---
+title: "ابدأ القراءة"
+description: "مقالات رأي وشعر وألبومات صور من الشرق الأوسط."
+translation: "/posts"
 ---
 
 <!DOCTYPE html>
@@ -6,15 +9,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Shujooon</title>
   <link rel="stylesheet" href="../style.css">
+{% include seo.html %}
 {% include favicon.html %}
 </head>
 
 <body>
 
 
-{% include nav.html lang="ar" toggle="/posts" %}
+{% include nav.html lang="ar" %}
 
 <!-- 
   <div class="page-bg"> </div>
@@ -25,9 +28,9 @@
 
 
  <ul class = "image-list">
-      <li><a href="post1" color = >Food Nationalism</a></li>
-      <li><a href="post2">The Arab Cinematic Universe Needs to Happen </a></li>
-      <li><a href="post3"> Naguib Mahfouz & Organised Spontaneity </a></li>
+      <li><a href="posts-folder/opinion/food-nationalism" color = >Food Nationalism</a></li>
+      <li><a href="posts-folder/opinion/arab-cinematic-universe-needs-to-happen">The Arab Cinematic Universe Needs to Happen </a></li>
+      <li><a href="posts-folder/opinion/naguib-mahfouz-organised-spontaneity"> Naguib Mahfouz & Organised Spontaneity </a></li>
     </ul>
 
 
@@ -48,8 +51,22 @@
 <div class="category-row">
 
     <article class="post">
+                <a href="../ar/no-translation">
+                <img src="../images/opinion/rai/disco-maghreb.jpeg" alt="Disco Maghreb">
+            </a>
+
+            <h2>
+                <a href="../ar/no-translation">الراي لم يكن يوماً نقياً</a>
+            </h2>
+
+            <p>
+                عن صوت التمرد والمنفى وإعادة الابتكار الجزائري
+            </p>
+            </article>
+
+    <article class="post">
                 <a href="posts-folder/photography/soul">
-                <img src="../images/Photography/soul/cat.JPG" alt="CHANGE ALT">
+                <img src="../images/Photography/soul/cat.JPG" alt="قطة مخططة جالسة على جدار مكتوب عليه شعر عربي في الفحيص">
             </a>
 
             <h2>
@@ -106,7 +123,7 @@
 
     <article class="post">
                 <a href="posts-folder/opinion/koobideh">
-                <img src="../images/opinion/koobideh/pizza.JPG" alt="Carl Jung Tower Bollingen">
+                <img src="../images/opinion/koobideh/pizza.JPG" alt="واجهة محل وجبات سريعة عليها ملصق رومان بيتزا">
             </a>
 
             <h2>
@@ -120,7 +137,7 @@
             
     <article class="post">
                 <a href="../ar/no-translation">
-                <img src="../images/opinion/matrix.jpg" alt="Carl Jung Tower Bollingen">
+                <img src="../images/opinion/matrix.jpg" alt="لافتة محل ماتريكس للهواتف في عمان">
             </a>
 
             <h2>
@@ -133,7 +150,7 @@
 
     <article class="post">
                 <a href="../ar/no-translation">
-                <img src="../images/opinion/yazan.jpg" alt="Carl Jung Tower Bollingen">
+                <img src="../images/opinion/yazan.jpg" alt="رجل جالس وحده على صخرة فوق الجبال عند الشروق">
             </a>
 
             <h2>
@@ -181,7 +198,7 @@
 
     <article class="post">
                 <a href="posts-folder/poetry/pots-pans">
-                <img src="../images/poetry/pot.JPG" alt="">
+                <img src="../images/poetry/pot.JPG" alt="قدر نحاسي معلق على جدار أخضر متآكل">
             </a>
 
             <h2>
@@ -195,12 +212,12 @@
 
 <article class="post">
 
-            <a href="posts-folder/opinion/post6">
-                <img src="../images/afla.jpeg" alt="">
+            <a href="posts-folder/opinion/can-a-philosopher-build-a-bridge">
+                <img src="../images/afla.jpeg" alt="طبعة عربية من جمهورية أفلاطون وعلى غلافها رسم لأفلاطون">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post6">هل يستطيع الفيلسوف بناء جسر؟</a>
+                <a href="posts-folder/opinion/can-a-philosopher-build-a-bridge">هل يستطيع الفيلسوف بناء جسر؟</a>
             </h2>
 
             <p>
@@ -211,12 +228,12 @@
 
 <article class="post">
 
-            <a href="posts-folder/opinion/post5">
-                <img src="../images/omar.JPG" alt="">
+            <a href="posts-folder/opinion/do-musicians-get-bored">
+                <img src="../images/omar.JPG" alt="صفحة مجلة فيها صور عمر خورشيد يعزف على الجيتار">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post5">هل الموسيقار بيزهق من نفس الأغنية؟</a>
+                <a href="posts-folder/opinion/do-musicians-get-bored">هل الموسيقار بيزهق من نفس الأغنية؟</a>
             </h2>
 
             <p>
@@ -227,12 +244,12 @@
 
 <article class="post">
 
-            <a href="posts-folder/opinion/post4">
-                <img src="../images/post4.jpg" alt="">
+            <a href="posts-folder/opinion/an-arab-to-the-kurds-a-kurd-to-the-arabs">
+                <img src="../images/opinion/iraqi-stamps.jpg" alt="مجموعة من الطوابع البريدية العراقية القديمة">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post4"> عربي للأكراد وكردي للعرب</a>
+                <a href="posts-folder/opinion/an-arab-to-the-kurds-a-kurd-to-the-arabs"> عربي للأكراد وكردي للعرب</a>
             </h2>
 
             <p>
@@ -243,12 +260,12 @@
 
 <article class="post">
 
-            <a href="posts-folder/opinion/post3">
-                <img src="../images/mahfouz.JPG" alt="">
+            <a href="posts-folder/opinion/naguib-mahfouz-organised-spontaneity">
+                <img src="../images/mahfouz.JPG" alt="نجيب محفوظ يدخن ويقرأ الجريدة مع القهوة">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post3"> نجيب محفوظ والتلقائية المنظمة</a>
+                <a href="posts-folder/opinion/naguib-mahfouz-organised-spontaneity"> نجيب محفوظ والتلقائية المنظمة</a>
             </h2>
 
             <p>
@@ -275,6 +292,20 @@
 <button class="scroll-btn left">❯</button>
 
         <div class="category-row">
+
+            <article class="post">
+                <a href="../ar/no-translation">
+                <img src="../images/opinion/rai/disco-maghreb.jpeg" alt="Disco Maghreb">
+            </a>
+
+            <h2>
+                <a href="../ar/no-translation">الراي لم يكن يوماً نقياً</a>
+            </h2>
+
+            <p>
+                عن صوت التمرد والمنفى وإعادة الابتكار الجزائري
+            </p>
+            </article>
 
             <article class="post">
                 <a href="posts-folder/opinion/football-fails-to-unite-the-arabs">
@@ -334,7 +365,7 @@
 
             <article class="post">
                 <a href="posts-folder/opinion/koobideh">
-                <img src="../images/opinion/koobideh/pizza.JPG" alt="Carl Jung Tower Bollingen">
+                <img src="../images/opinion/koobideh/pizza.JPG" alt="واجهة محل وجبات سريعة عليها ملصق رومان بيتزا">
             </a>
 
             <h2>
@@ -347,12 +378,12 @@
             </article>
             
     <article class="post">
-                <a href="posts-folder/opinion/city">
-                <img src="../images/opinion/matrix.jpg" alt="Carl Jung Tower Bollingen">
+                <a href="../ar/no-translation">
+                <img src="../images/opinion/matrix.jpg" alt="لافتة محل ماتريكس للهواتف في عمان">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/city">مدينة ترد الكلام</a>
+                <a href="../ar/no-translation">مدينة ترد الكلام</a>
             </h2>
 
             <p>
@@ -361,7 +392,7 @@
 
     <article class="post">
                 <a href="../ar/no-translation">
-                <img src="../images/opinion/yazan.jpg" alt="Carl Jung Tower Bollingen">
+                <img src="../images/opinion/yazan.jpg" alt="رجل جالس وحده على صخرة فوق الجبال عند الشروق">
             </a>
 
             <h2>
@@ -405,12 +436,12 @@
 
 <article class="post">
 
-            <a href="posts-folder/opinion/post6">
-                <img src="../images/afla.jpeg" alt="">
+            <a href="posts-folder/opinion/can-a-philosopher-build-a-bridge">
+                <img src="../images/afla.jpeg" alt="طبعة عربية من جمهورية أفلاطون وعلى غلافها رسم لأفلاطون">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post6">هل يستطيع الفيلسوف بناء جسر؟</a>
+                <a href="posts-folder/opinion/can-a-philosopher-build-a-bridge">هل يستطيع الفيلسوف بناء جسر؟</a>
             </h2>
 
             <p>
@@ -421,12 +452,12 @@
 
 <article class="post">
 
-            <a href="posts-folder/opinion/post5">
-                <img src="../images/omar.JPG" alt="">
+            <a href="posts-folder/opinion/do-musicians-get-bored">
+                <img src="../images/omar.JPG" alt="صفحة مجلة فيها صور عمر خورشيد يعزف على الجيتار">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post5">هل الموسيقار بيزهق من نفس الأغنية؟</a>
+                <a href="posts-folder/opinion/do-musicians-get-bored">هل الموسيقار بيزهق من نفس الأغنية؟</a>
             </h2>
 
             <p>
@@ -437,12 +468,12 @@
 
 <article class="post">
 
-            <a href="posts-folder/opinion/post4">
-                <img src="../images/post4.jpg" alt="">
+            <a href="posts-folder/opinion/an-arab-to-the-kurds-a-kurd-to-the-arabs">
+                <img src="../images/opinion/iraqi-stamps.jpg" alt="مجموعة من الطوابع البريدية العراقية القديمة">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post4"> عربي للأكراد وكردي للعرب</a>
+                <a href="posts-folder/opinion/an-arab-to-the-kurds-a-kurd-to-the-arabs"> عربي للأكراد وكردي للعرب</a>
             </h2>
 
             <p>
@@ -453,12 +484,12 @@
 
 <article class="post">
 
-            <a href="posts-folder/opinion/post3">
-                <img src="../images/mahfouz.JPG" alt="">
+            <a href="posts-folder/opinion/naguib-mahfouz-organised-spontaneity">
+                <img src="../images/mahfouz.JPG" alt="نجيب محفوظ يدخن ويقرأ الجريدة مع القهوة">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post3"> نجيب محفوظ والتلقائية المنظمة</a>
+                <a href="posts-folder/opinion/naguib-mahfouz-organised-spontaneity"> نجيب محفوظ والتلقائية المنظمة</a>
             </h2>
 
             <p>
@@ -470,12 +501,12 @@
 
     <article class="post">
 
-            <a href="posts-folder/opinion/post2">
-                <img src="../images/saddam.jpeg" alt="">
+            <a href="posts-folder/opinion/arab-cinematic-universe-needs-to-happen">
+                <img src="../images/saddam.jpeg" alt="صدام حسين يمسح عينيه على المنصة">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post2">آن أوان قيام عالم سينمائي عربي</a>
+                <a href="posts-folder/opinion/arab-cinematic-universe-needs-to-happen">آن أوان قيام عالم سينمائي عربي</a>
             </h2>
 
             <p>
@@ -487,12 +518,12 @@
         
 <article class="post">
 
-            <a href="posts-folder/opinion/post1">
-                <img src="../images/howtocook.jpeg" alt="">
+            <a href="posts-folder/opinion/food-nationalism">
+                <img src="../images/howtocook.jpeg" alt="غلاف كتاب How to Cook in Palestine لإرنا ماير من ثلاثينيات القرن العشرين">
             </a>
 
             <h2>
-                <a href="posts-folder/opinion/post1">الطعام والقومية</a>
+                <a href="posts-folder/opinion/food-nationalism">الطعام والقومية</a>
             </h2>
 
             <p>
@@ -524,7 +555,7 @@
 
             <article class="post">
                 <a href="posts-folder/photography/soul">
-                <img src="../images/Photography/soul/cat.JPG" alt="CHANGE ALT">
+                <img src="../images/Photography/soul/cat.JPG" alt="قطة مخططة جالسة على جدار مكتوب عليه شعر عربي في الفحيص">
             </a>
 
             <h2>
@@ -597,7 +628,7 @@
 
             <article class="post">
                 <a href="posts-folder/poetry/pots-pans">
-                <img src="../images/poetry/pot.JPG" alt="">
+                <img src="../images/poetry/pot.JPG" alt="قدر نحاسي معلق على جدار أخضر متآكل">
             </a>
 
             <h2>
@@ -629,7 +660,7 @@
 
 <article class="post">
                 <a href="posts-folder/photography/soul">
-                <img src="../images/Photography/soul/cat.JPG" alt="CHANGE ALT">
+                <img src="../images/Photography/soul/cat.JPG" alt="قطة مخططة جالسة على جدار مكتوب عليه شعر عربي في الفحيص">
             </a>
 
             <h2>
