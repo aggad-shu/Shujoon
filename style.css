@@ -961,3 +961,35 @@ html[dir="rtl"] .hero-text p {
         gap: 1.5rem;
     }
 }
+
+/* In-text citation numerals and the references list at the end of essays */
+.post-content sup {
+  margin-inline-start: 0.2em;
+}
+
+.post-content sup a {
+  text-decoration: none;
+  font-size: 0.75em;
+}
+
+.references {
+  font-size: 0.9em;
+}
+
+/* Long quotations inside posts */
+.post-content blockquote {
+  margin: 1.5em 0;
+  padding-block: 0.2em;
+  padding-inline-start: 1.2em;
+  border-inline-start: 3px solid currentColor;
+  font-style: italic;
+}
+
+/* Arabic has no true italics; keep quotes upright and number references in Arabic digits */
+[dir="rtl"] .post-content blockquote {
+  font-style: normal;
+}
+
+[dir="rtl"] .references {
+  list-style-type: arabic-indic;
+}
