@@ -773,7 +773,14 @@ main {
             color 0.2s ease;
     }
 
-    .lang-switch:hover,
+    /* beat the global a:link / a:visited blue */
+    .lang-switch:link,
+    .lang-switch:visited {
+        color: white;
+    }
+
+    .lang-switch:link:hover,
+    .lang-switch:visited:hover,
     .lang-switch:active {
         background: white;
         color: #283a88;
