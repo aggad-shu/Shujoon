@@ -324,6 +324,11 @@ main {
     display: none;
 }
 
+/* Phone-only language switch; desktop uses the toggle inside .nav-links */
+.lang-switch {
+    display: none;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -584,7 +589,8 @@ main {
     }
 
     .title {
-        font-size: 2.5rem;
+        font-size: clamp(1.6rem, 8vw, 2.5rem); /* shrink so long words like "contradictions" fit */
+        overflow-wrap: break-word;
         margin-bottom: 20px;
     }
 
@@ -746,6 +752,41 @@ main {
 .hamburger.active span:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
 }
+
+    .lang-switch {
+        display: inline-block;
+
+        color: white;
+        text-decoration: none;
+
+        font-size: 0.95rem;
+        letter-spacing: 1px;
+        line-height: 1;
+
+        padding: 0.5rem 1rem;
+
+        border: 1.5px solid white;
+        border-radius: 999px;
+
+        transition:
+            background 0.2s ease,
+            color 0.2s ease;
+    }
+
+    .lang-switch:hover,
+    .lang-switch:active {
+        background: white;
+        color: #283a88;
+    }
+
+    .lang-switch[lang="ar"] {
+        font-family: "lulu", sans-serif;
+    }
+
+    /* the header button replaces the in-menu toggle on phones */
+    .language-toggle {
+        display: none;
+    }
 
 
     .hero-text h1 {

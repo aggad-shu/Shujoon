@@ -4,6 +4,12 @@
 <a href="{% if include.lang == "ar" %}/ar/{% else %}/{% endif %}"> <img src="/images/Arabic english box.png" alt="Shujooon Logo"> </a>
 </div>
 
+{% if include.lang == "ar" %}
+<a class="lang-switch" href="{{ page.translation | default: '/' }}" lang="en" hreflang="en">English</a>
+{% else %}
+<a class="lang-switch" href="{{ page.translation | default: '/ar/no-translation' }}" lang="ar" hreflang="ar">العربية</a>
+{% endif %}
+
 <button class="hamburger" aria-label="Toggle navigation">
 <span></span>
 <span></span>
