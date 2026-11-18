@@ -1041,3 +1041,11 @@ html[dir="rtl"] .hero-text p {
 [dir="rtl"] .references {
   list-style-type: arabic-indic;
 }
+
+.image-caption {
+    text-align: center;
+    font-size: 0.9em;
+    font-style: italic;
+    opacity: 0.8;
+    margin-top: -1.25rem;
+}
